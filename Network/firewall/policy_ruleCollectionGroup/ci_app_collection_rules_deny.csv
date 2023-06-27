@@ -1,0 +1,5 @@
+rule_arcg_name,type1,port1,source_ip_groups,destination_addresses_arcg,destination_fqdns_arcg,protocols
+"Application Rule2","Https","443","/subscriptions/a8f92906-72b6-4a4d-930b-7154d0f0847f/resourceGroups/abrpl-ci-cnct-core-rg01/providers/Microsoft.Network/ipGroups/app_rule02",,"apps-dev.abrpl.co.in","TCP"
+"Application Rule3","Https","443","/subscriptions/a8f92906-72b6-4a4d-930b-7154d0f0847f/resourceGroups/abrpl-ci-cnct-core-rg01/providers/Microsoft.Network/ipGroups/app_rule03",,"apps-dev.abrpl.co.in","TCP"
+"Application Rule5","Https","443","/subscriptions/a8f92906-72b6-4a4d-930b-7154d0f0847f/resourceGroups/abrpl-ci-cnct-core-rg01/providers/Microsoft.Network/ipGroups/app_rule05",,"apps-dev.abrpl.co.in","TCP"
+"Application Rule6","Https","443","/subscriptions/a8f92906-72b6-4a4d-930b-7154d0f0847f/resourceGroups/abrpl-ci-cnct-core-rg01/providers/Microsoft.Network/ipGroups/app_rule06",,"apps-dev.abrpl.co.in","TCP"

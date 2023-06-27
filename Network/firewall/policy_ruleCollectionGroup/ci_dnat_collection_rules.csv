@@ -1,0 +1,3 @@
+rule_natrcg_name,protocols,source_ip_groups,destination_address_natrcg,destination_ports_natrcg,translated_address_natrcg,translated_port_natrcg
+
+

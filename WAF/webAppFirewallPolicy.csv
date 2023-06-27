@@ -1,0 +1,2 @@
+CustomRuleName,Priority,RuleType,MatchVariableName,Operator,NegationCondition,MatchValues,Action,PolicyEnabled,Mode,RequestBodyCheck,FileLimit,Size,MatchVariable,Selector,Operator,MRSType,MRSVersion,RuleGroupName,DiabledRules
+"", "", "","","","","","",true,Detection,"","","","","",""

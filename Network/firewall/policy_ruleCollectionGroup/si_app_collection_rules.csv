@@ -1,0 +1,6 @@
+rule_arcg_name,type1,port1,source_ip_groups,destination_addresses_arcg,destination_fqdns_arcg,destination_fqdn_tags_arcg,web_categories,protocols
+"Application Rule1_si","Https","443","/subscriptions/a8f92906-72b6-4a4d-930b-7154d0f0847f/resourceGroups/abrpl-si-cnct-core-rg01/providers/Microsoft.Network/ipGroups/si_app_rule01",,"apps-dev.abrpl.co.in",,,"TCP"
+"Application Rule4_si","Https","443","/subscriptions/a8f92906-72b6-4a4d-930b-7154d0f0847f/resourceGroups/abrpl-si-cnct-core-rg01/providers/Microsoft.Network/ipGroups/si_app_rule04",,"apps-dev.abrpl.co.in",,,"TCP"
+"Application Rule7_si","Https","443","/subscriptions/a8f92906-72b6-4a4d-930b-7154d0f0847f/resourceGroups/abrpl-si-cnct-core-rg01/providers/Microsoft.Network/ipGroups/si_app_rule07",,"apps-dev.abrpl.co.in",,,"TCP"
+"Application Rule8_si","Https","443","/subscriptions/a8f92906-72b6-4a4d-930b-7154d0f0847f/resourceGroups/abrpl-si-cnct-core-rg01/providers/Microsoft.Network/ipGroups/si_app_rule08",,"apps-dev.abrpl.co.in",,,"TCP"
+"Application Rule9_si","Https","443","/subscriptions/a8f92906-72b6-4a4d-930b-7154d0f0847f/resourceGroups/abrpl-si-cnct-core-rg01/providers/Microsoft.Network/ipGroups/si_app_rule09",,"apps-dev.abrpl.co.in",,,"TCP"

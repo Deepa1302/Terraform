@@ -1,0 +1,1710 @@
+{
+    "lenses": {
+      "0": {
+        "order": 0,
+        "parts": {
+          "0": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "colSpan": 2,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "id",
+                  "value": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                },
+                {
+                  "name": "Version",
+                  "value": "1.0"
+                }
+              ],
+              "type": "Extension/AppInsightsExtension/PartType/AspNetOverviewPinnedPart",
+              "asset": {
+                "idInputName": "id",
+                "type": "ApplicationInsights"
+              },
+              "defaultMenuItemId": "overview"
+            }
+          },
+          "1": {
+            "position": {
+              "x": 2,
+              "y": 0,
+              "colSpan": 1,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "ComponentId",
+                  "value": {
+                    "Name": "${appinsight_instance}",
+                    "SubscriptionId": "${subscription_id}",
+                    "ResourceGroup": "${resource_group}"
+                  }
+                },
+                {
+                  "name": "Version",
+                  "value": "1.0"
+                }
+              ],
+              "type": "Extension/AppInsightsExtension/PartType/ProactiveDetectionAsyncPart",
+              "asset": {
+                "idInputName": "ComponentId",
+                "type": "ApplicationInsights"
+              },
+              "defaultMenuItemId": "ProactiveDetection"
+            }
+          },
+          "2": {
+            "position": {
+              "x": 3,
+              "y": 0,
+              "colSpan": 1,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "ComponentId",
+                  "value": {
+                    "Name": "${appinsight_instance}",
+                    "SubscriptionId": "${subscription_id}",
+                    "ResourceGroup": "${resource_group}"
+                  }
+                },
+                {
+                  "name": "ResourceId",
+                  "value": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                }
+              ],
+              "type": "Extension/AppInsightsExtension/PartType/QuickPulseButtonSmallPart",
+              "asset": {
+                "idInputName": "ComponentId",
+                "type": "ApplicationInsights"
+              }
+            }
+          },
+          "3": {
+            "position": {
+              "x": 4,
+              "y": 0,
+              "colSpan": 1,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "ComponentId",
+                  "value": {
+                    "Name": "${appinsight_instance}",
+                    "SubscriptionId": "${subscription_id}",
+                    "ResourceGroup": "${resource_group}"
+                  }
+                },
+                {
+                  "name": "TimeContext",
+                  "value": {
+                    "durationMs": 86400000,
+                    "endTime": null,
+                    "createdTime": "2018-05-04T01:20:33.345Z",
+                    "isInitialTime": true,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                  }
+                },
+                {
+                  "name": "Version",
+                  "value": "1.0"
+                },
+                {
+                  "name": "componentId",
+                  "isOptional": true
+                },
+                {
+                  "name": "id",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/AppInsightsExtension/PartType/WebTestsPinnedPart",
+              "asset": {
+                "idInputName": "ComponentId",
+                "type": "ApplicationInsights"
+              }
+            }
+          },
+          "4": {
+            "position": {
+              "x": 5,
+              "y": 0,
+              "colSpan": 1,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "ComponentId",
+                  "value": {
+                    "Name": "${appinsight_instance}",
+                    "SubscriptionId": "${subscription_id}",
+                    "ResourceGroup": "${resource_group}"
+                  }
+                },
+                {
+                  "name": "TimeContext",
+                  "value": {
+                    "durationMs": 86400000,
+                    "endTime": null,
+                    "createdTime": "2018-05-08T18:47:35.237Z",
+                    "isInitialTime": true,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                  }
+                },
+                {
+                  "name": "ConfigurationId",
+                  "value": "78ce933e-e864-4b05-a27b-71fd55a6afad"
+                },
+                {
+                  "name": "MainResourceId",
+                  "isOptional": true
+                },
+                {
+                  "name": "ResourceIds",
+                  "isOptional": true
+                },
+                {
+                  "name": "DataModel",
+                  "isOptional": true
+                },
+                {
+                  "name": "UseCallerTimeContext",
+                  "isOptional": true
+                },
+                {
+                  "name": "OverrideSettings",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartId",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/AppInsightsExtension/PartType/ApplicationMapPart",
+              "settings": {},
+              "asset": {
+                "idInputName": "ComponentId",
+                "type": "ApplicationInsights"
+              }
+            }
+          },
+          "5": {
+            "position": {
+              "x": 0,
+              "y": 1,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "exceptions/server",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Server exceptions",
+                            "color": "#47BDF5"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "dependencies/failed",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Dependency failures",
+                            "color": "#7E58FF"
+                          }
+                        }
+                      ],
+                      "title": "Server exceptions and Dependency failures",
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "exceptions/server",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Server exceptions",
+                            "color": "#47BDF5"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "dependencies/failed",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Dependency failures",
+                            "color": "#7E58FF"
+                          }
+                        }
+                      ],
+                      "title": "Server exceptions and Dependency failures",
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "6": {
+            "position": {
+              "x": 0,
+              "y": 4,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/Microsoft.ContainerService/managedClusters/${aks_name}"
+                          },
+                          "name": "node_cpu_usage_millicores",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.containerservice/managedclusters",
+                          "metricVisualization": {
+                            "displayName": "CPU Usage Millicores",
+                            "resourceDisplayName": "${aks_name}"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/Microsoft.ContainerService/managedClusters/${aks_name}"
+                          },
+                          "name": "node_cpu_usage_millicores",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.containerservice/managedclusters",
+                          "metricVisualization": {
+                            "displayName": "CPU Usage Millicores",
+                            "resourceDisplayName": "${aks_name}"
+                          }
+                        }
+                      ],
+                      "title": "CPU for cluster",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "7": {
+            "position": {
+              "x": 4,
+              "y": 4,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        }
+                      ],
+                      "title": "CPU search-discovery",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": true
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-discovery"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "8": {
+            "position": {
+              "x": 7,
+              "y": 4,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        }
+                      ],
+                      "title": "CPU search-autocomplete",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-autocomplete"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "9": {
+            "position": {
+              "x": 10,
+              "y": 4,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        }
+                      ],
+                      "title": "CPU search-elasticsearch",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-elasticsearch"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "10": {
+            "position": {
+              "x": 13,
+              "y": 4,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        }
+                      ],
+                      "title": "CPU search-explorer",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-explorer"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "11": {
+            "position": {
+              "x": 16,
+              "y": 4,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        }
+                      ],
+                      "title": "CPU search-indexer",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-indexer"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "12": {
+            "position": {
+              "x": 19,
+              "y": 4,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        }
+                      ],
+                      "title": "CPU search-smoke-testing",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-smoke-testing"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "13": {
+            "position": {
+              "x": 22,
+              "y": 4,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "performanceCounters/processCpuPercentageTotal",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Process CPU (all cores)"
+                          }
+                        }
+                      ],
+                      "title": "CPU search-uploader",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-uploader"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "14": {
+            "position": {
+              "x": 0,
+              "y": 7,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/Microsoft.ContainerService/managedClusters/${aks_name}"
+                          },
+                          "name": "node_memory_working_set_bytes",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.containerservice/managedclusters",
+                          "metricVisualization": {
+                            "displayName": "Memory Working Set Bytes",
+                            "resourceDisplayName": "${aks_name}"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/Microsoft.ContainerService/managedClusters/${aks_name}"
+                          },
+                          "name": "node_memory_working_set_bytes",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.containerservice/managedclusters",
+                          "metricVisualization": {
+                            "displayName": "Memory Working Set Bytes",
+                            "resourceDisplayName": "${aks_name}"
+                          }
+                        }
+                      ],
+                      "title": "RAM for cluster",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "15": {
+            "position": {
+              "x": 4,
+              "y": 7,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        }
+                      ],
+                      "title": "RAM search-discovery",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": true
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-discovery"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "16": {
+            "position": {
+              "x": 7,
+              "y": 7,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        }
+                      ],
+                      "title": "RAM search-autocomplete",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-autocomplete"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "17": {
+            "position": {
+              "x": 10,
+              "y": 7,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        }
+                      ],
+                      "title": "RAM search-elasticsearch",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-elasticsearch"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "18": {
+            "position": {
+              "x": 13,
+              "y": 7,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        }
+                      ],
+                      "title": "RAM search-explorer",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-explorer"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "19": {
+            "position": {
+              "x": 16,
+              "y": 7,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        }
+                      ],
+                      "title": "RAM search-indexer",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-indexer"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "20": {
+            "position": {
+              "x": 19,
+              "y": 7,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+  
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        }
+                      ],
+                      "title": "RAM search-smoke-testing",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-smoke-testing"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "21": {
+            "position": {
+              "x": 22,
+              "y": 7,
+              "colSpan": 3,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/${subscription_id}/resourceGroups/${resource_group}/providers/microsoft.insights/components/${appinsight_instance}"
+                          },
+                          "name": "customMetrics/Heap Memory Used (MB)",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.insights/components/kusto",
+                          "metricVisualization": {
+                            "displayName": "Heap Memory Used (MB)"
+                          }
+                        }
+                      ],
+                      "title": "RAM search-uploader",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "cloud/roleName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "search-uploader"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "model": {
+        "timeRange": {
+          "value": {
+            "relative": {
+              "duration": 24,
+              "timeUnit": 1
+            }
+          },
+          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+        },
+        "filterLocale": {
+          "value": "en-us"
+        },
+        "filters": {
+          "value": {
+            "MsPortalFx_TimeRange": {
+              "model": {
+                "format": "utc",
+                "granularity": "auto",
+                "relative": "4h"
+              },
+              "displayCache": {
+                "name": "UTC Time",
+                "value": "Past 4 hours"
+              },
+              "filteredPartIds": [
+                "StartboardPart-ApplicationMapPart-4ea07293-d127-411e-a719-99732c032394",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c032396",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c032398",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c03239a",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c03239c",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c03239e",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323a0",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323a2",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323a4",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323a6",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323a8",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323aa",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323ac",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323ae",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323b0",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323b2",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323b4",
+                "StartboardPart-MonitorChartPart-4ea07293-d127-411e-a719-99732c0323b6"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+  
