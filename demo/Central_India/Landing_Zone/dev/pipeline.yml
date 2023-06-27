@@ -1,0 +1,131 @@
+
+pool:
+  name: Azure Pipelines
+  vmImage: 'windows-latest'
+variables:
+  #tfstatetoken: 'https://abrplscmtfst.blob.core.windows.net/terraformstatefile?sp=racwdl&st=2023-02-01T08:28:25Z&se=2025-02-01T16:28:25Z&spr=https&sv=2021-06-08&sr=c&sig=uUU872gF2ktzr4zXioXqO%2Fbqo3gmGFEpc4nDZH%2BJJ%2Bo%3D'
+  - group: dev
+trigger:
+  branches:
+    include:
+    - dev
+  paths:
+    include:
+    - ABRPL/Central_India/Landing_Zone/dev
+
+
+# Stages  
+stages:
+  # PlanStage
+  - stage: Plan
+    displayName: 'Plan changes'
+    jobs:
+    - job: plan
+      displayName: Terraform Plan
+      steps:
+      #Install terraform
+      - task: TerraformInstaller@0
+        inputs:
+          terraformVersion: '1.1.1'
+        displayName: Install Terraform
+        
+      # Initiate the working directory      
+      - task: TerraformTaskV2@2
+        inputs:
+          provider: 'azurerm'
+          command: 'init'
+          workingDirectory: 'ABRPL/Central_India/Landing_Zone/dev'
+          commandOptions: '-backend-config="access_key=$(secretkey)"'
+          backendServiceArm: 'terraform'
+          backendAzureRmResourceGroupName: 'aksingress'
+          backendAzureRmStorageAccountName: 'aksterraform01'
+          backendAzureRmContainerName: 'terraform'
+          backendAzureRmKey: 'devci.tfstate'
+        displayName: Terraform Init
+
+      - task: TerraformTaskV2@2
+        displayName: Terraform Plan
+        inputs:
+          provider: 'azurerm'
+          command: 'plan'
+          workingDirectory: 'ABRPL/Central_India/Landing_Zone/dev'
+          commandOptions: '-var-file="env.tfvars"'
+          environmentServiceNameAzureRM: 'terraform'
+        #env:
+          #TF_VAR_CONNECTIVITY_ID : '$(SUB-ID-CONNECTIVITY)'
+          # TF_VAR_SECURITY_SUB : '$(SUB-ID-SECURITY)'
+          #  TF_VAR_MANAGEMENT_SUB : '$(SUB-ID-MANAGEMENT)'
+   
+
+
+      - task: CopyFiles@2
+        displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+        inputs:
+          Contents: |
+            **ABRPL\Central_India\Landing_Zone\dev\**
+            **\Modules\**         
+          TargetFolder: '$(build.artifactstagingdirectory)'
+          CleanTargetFolder: true
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish Artifact'   
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: '$(Build.BuildID)-Core-tfplan' 
+    
+  - stage: Apply
+    displayName: 'Apply changes'
+    dependsOn: Plan
+    condition: succeeded('Plan')
+    jobs:
+      - deployment: apply
+        displayName: Terraform Apply
+        environment: dev
+        strategy:
+          runOnce:
+            deploy:  
+              steps: 
+                - task: TerraformInstaller@0
+                  displayName: 'Install Terraform 1.1.1'
+                  inputs:
+                    terraformVersion: '1.1.1'
+                - task: DownloadBuildArtifacts@0
+                  displayName: 'Download Build Artifacts'
+                  inputs:
+                    buildType: 'current'
+                    downloadType: 'single'
+                    artifactName: '$(Build.BuildID)-Core-tfplan'
+                    downloadPath: '$(System.ArtifactsDirectory)'    
+                - task: TerraformTaskV2@2
+                  displayName: 'Initialize Terraform Working Directory'
+                  inputs:
+                    provider: 'azurerm'
+                    command: 'init'
+                    workingDirectory: "$(System.ArtifactsDirectory)/$(Build.BuildID)-Core-tfplan/ABRPL/Central_India/Landing_Zone/dev" #replace
+                    commandOptions: '-backend-config="access_key=$(secretkey)"'
+                    backendServiceArm: 'terraform'
+                    backendAzureRmResourceGroupName: 'aksingress'
+                    backendAzureRmStorageAccountName: 'aksterraform01'
+                    backendAzureRmContainerName: 'terraform'
+                    backendAzureRmKey: 'devci.tfstate' #replace
+                - task: TerraformTaskV2@2
+                  displayName: 'Validate Terraform Configuration'
+                  inputs:
+                    provider: 'azurerm'
+                    command: 'validate'
+                    workingDirectory: '$(System.ArtifactsDirectory)/$(Build.BuildID)-Core-tfplan/ABRPL/Central_India/Landing_Zone/dev'
+                    #commandOptions: ''
+                - task: TerraformTaskV2@2
+                  displayName: 'Apply Terraform Plan'
+                  inputs:
+                    provider: 'azurerm'
+                    command: 'apply'
+                    environmentServiceNameAzureRM: 'terraform' 
+                    workingDirectory: '$(System.ArtifactsDirectory)/$(Build.BuildID)-Core-tfplan/ABRPL/Central_India/Landing_Zone/dev' 
+                    commandOptions: '-var-file="env.tfvars" -auto-approve'
+                  #env:
+                    #TF_VAR_CONNECTIVITY_ID : '$(SUB-ID-CONNECTIVITY)'
+                    # TF_VAR_SECURITY_SUB : '$(SUB-ID-SECURITY)'
+                    #  TF_VAR_MANAGEMENT_SUB : '$(SUB-ID-MANAGEMENT)'
+   
+      
+          
